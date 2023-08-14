@@ -45,6 +45,7 @@ router.post('/SauceNAO', async (req: Request) => {
 
   const form = new FormData();
   form.append('file', image!);
+  form.append('api_key','210b96f1671e7452909dacd21a6b8ae7bc932502')
   if (hide) form.append('hide', '3');
 
   const url = new URL('/search.php', BASE_URL);
