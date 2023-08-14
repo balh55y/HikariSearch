@@ -52,4 +52,5 @@ router.post('/SauceNAO', async (req: Request) => {
   const response = await request.post(url, form).then((res) => res.text());
 
   return json(parse(response));
+  
 });
